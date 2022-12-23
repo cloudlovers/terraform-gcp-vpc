@@ -1,7 +1,7 @@
 provider "google" {
-  project     = var.project_id
-  region      = var.gcp_region
-  zone        = var.gcp_zone
+  project = var.project_id
+  region  = var.gcp_region
+  zone    = var.gcp_zone
 }
 
 module "vpc" {
@@ -11,7 +11,7 @@ module "vpc" {
   environment = var.environment
   label_order = var.label_order
 
-  module_enabled = true
+  module_enabled                  = true
   google_compute_network_enabled  = true
   project_id                      = var.project_id
   auto_create_subnetworks         = false

@@ -24,8 +24,8 @@ variable "name" {
 }
 
 variable "google_compute_network_enabled" {
-  type    = bool
-  default = true
+  type        = bool
+  default     = true
   description = ""
 }
 
